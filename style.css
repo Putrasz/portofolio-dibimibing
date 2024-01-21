@@ -10,27 +10,25 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
-
+/* SCROLL BAR */
 ::-webkit-scrollbar {
     width: 7px;
 }
 
-  /* Track */
 ::-webkit-scrollbar-track {
     border-radius: 10px;
 }
 
-  /* Handle */
 ::-webkit-scrollbar-thumb {
     background: rgb(102, 102, 102); 
     border-radius: 10px;
 }
 
-  /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #000000; 
 }
 
+/* NAVBAR */
 nav {
     position: fixed;
     display: flex;
@@ -117,6 +115,7 @@ nav ul li a:hover {
     transform: scale(0);
 }
 
+/* WELCOME WORD */
 .logo img {
     display: none;
 }
@@ -150,8 +149,44 @@ nav ul li a:hover {
 .p-porto span {
     text-decoration: underline;
 }
+
+/* ABOUT */
+.about-porto p {
+    padding-top: 20px;
+}
+
+div .about-tentang {
+    padding-top: 4rem;
+}
+
+div .about-tentang, .about-pendidikan, .about-project, .about-keahlian {
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+
+/* CONTACT */
+.kontak-porto {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10px;
+    background-color: rgb(102, 102, 102);
+}
+
+.kontak-porto h2 {
+    text-align: center;
+}
+
+.igdin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* tablet */
 @media screen and (max-width:768px) {
+    nav {
+        width: 100%;
+    }
     nav ul {
         width: 50%;
     }
@@ -159,19 +194,21 @@ nav ul li a:hover {
         letter-spacing: 0;
         font-family: 'Pacifico', cursive;
     }
+    .img-porto img {
+        width: 60%;
+        height: 60%;
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+    .p-porto {
+        padding-right: 2rem;
+    }
 }
 
 /* phone */
 @media screen and (max-width:576px) {
-    .logo h4 {
-        display: none;
-    }
-    .logo img {
-        width: 20%;
-        height: 20%;
+    .logo {
         display: flex;
-        padding-top: 2rem;
-
     }
     .menu-toggle {
         display: flex;
@@ -198,7 +235,6 @@ nav ul li a:hover {
         transition: all 0.5s;
         opacity: 0;
     }
-
     nav ul.slide {
         opacity: 1;
         transform: translateX(0);
