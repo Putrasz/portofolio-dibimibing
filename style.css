@@ -173,14 +173,17 @@ div .about-tentang, .about-pendidikan, .about-project, .about-keahlian, .about-a
     background-color: rgb(102, 102, 102);
 }
 
-.kontak-porto h3 {
+.kontak-porto h2 {
     text-align: center;
+    font-size: 25px;
+    padding: 20px;
 }
 
 .igdin {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
 }
 /* tablet */
 @media screen and (max-width:768px) {
