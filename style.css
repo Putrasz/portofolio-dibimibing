@@ -166,14 +166,6 @@ div .about-tentang, .about-pendidikan, .about-project, .about-keahlian, .about-a
 }
 
 
-/* GRID */
-.grid-container {
-    display: none;
-}
-
-
-
-
 /* CONTACT */
 .kontak-porto {
     font-family: 'Poppins', sans-serif;
@@ -181,7 +173,7 @@ div .about-tentang, .about-pendidikan, .about-project, .about-keahlian, .about-a
     background-color: rgb(102, 102, 102);
 }
 
-.kontak-porto h2 {
+.kontak-porto h3 {
     text-align: center;
 }
 
