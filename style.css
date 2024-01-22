@@ -215,14 +215,6 @@ div .about-tentang, .about-pendidikan, .about-project, .about-keahlian, .about-a
 
 /* phone */
 @media screen and (max-width:576px) {
-    .welcome-porto {
-        background-image: url(IMG/code.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .about-porto {
-        display: none;
-    }
     .logo {
         display: flex;
     }
@@ -254,34 +246,5 @@ div .about-tentang, .about-pendidikan, .about-project, .about-keahlian, .about-a
     nav ul.slide {
         opacity: 1;
         transform: translateX(0);
-    }
-/* GRID */
-    .grid-item h4 {
-        padding-bottom: 12px;
-        color: white;
-        text-decoration: underline;
-    }
-
-    .grid-item p {
-        color: white;
-        padding: 5px;
-        text-align: left;
-        font-size: 20px;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto;
-        padding: 4px;
-        padding: 10px;
-    }
-
-    .grid-item {
-        background-color: rgb(54, 54, 54);
-        border: 7px solid rgba(76, 166, 255, 0.8);
-        margin: 8rem;
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
     }
 }
