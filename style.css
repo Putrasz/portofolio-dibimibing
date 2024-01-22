@@ -209,7 +209,7 @@ div .about-tentang, .about-pendidikan, .about-project, .about-keahlian, .about-a
 }
 
 /* phone */
-@media screen and (max-width:576px) {
+@media screen and (max-width:600px) {
     .logo {
         display: flex;
     }
