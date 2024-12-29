@@ -1,245 +1,248 @@
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 body {
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 /* SCROLL BAR */
 ::-webkit-scrollbar {
-    width: 7px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(102, 102, 102); 
-    border-radius: 10px;
+  background: rgb(102, 102, 102);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #000000; 
+  background: #000000;
 }
 
 /* NAVBAR */
 nav {
-    position: fixed;
-    display: flex;
-    background-color: rgb(54, 54, 54);
-    justify-content: space-around;
-    width: 100%;
-    height: 50px;
-    align-items: center;
-    color: rgb(232, 232, 232)
+  position: fixed;
+  display: flex;
+  background-color: rgb(54, 54, 54);
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  color: rgb(232, 232, 232);
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    width: 40%;
-    justify-content: space-between;
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
 }
 
 nav .logo {
-    letter-spacing: 3px;
-    font-family: 'Pacifico', cursive;
+  letter-spacing: 3px;
+  font-family: "Pacifico", cursive;
 }
 
 nav ul li a {
-    color: rgb(211, 211, 211);
-    text-decoration: none;
-    font-size: 0.9em;
-    cursor: pointer;
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+  font-size: 0.9em;
+  cursor: pointer;
 }
 
 nav ul li a:hover {
-    color: white;
+  color: white;
 }
 
 /* hamburger menu */
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
 }
 
 .menu-toggle input {
-    position: absolute;
-    width: 50px;
-    height: 25px;
-    left: -11px;
-    top: -2px;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  left: -11px;
+  top: -2px;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: rgb(211, 211, 211);
-    border-radius: 3px;
-    transition: all 0.5s;
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(211, 211, 211);
+  border-radius: 3px;
+  transition: all 0.5s;
 }
 
 /* hamburger menu animation */
 .menu-toggle span:nth-child(2) {
-    transform-origin: 0 0;
+  transform-origin: 0 0;
 }
 
 .menu-toggle span:nth-child(4) {
-    transform-origin: 0 100%;
+  transform-origin: 0 100%;
 }
 
 .menu-toggle input:checked ~ span:nth-child(2) {
-    background-color: white;
-    transform: rotate(45deg) translate(-1px, -1px);
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
 }
 
 .menu-toggle input:checked ~ span:nth-child(4) {
-    background-color: white;
-    transform: rotate(-45deg) translate(-1px, 0);
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
 }
 
 .menu-toggle input:checked ~ span:nth-child(3) {
-    opacity: 0;
-    transform: scale(0);
+  opacity: 0;
+  transform: scale(0);
 }
 
 /* WELCOME WORD */
 .logo img {
-    display: none;
+  display: none;
 }
 
 .welcome-porto {
-    padding-top: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(IMG/code.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(IMG/code.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .p-porto {
-    padding-bottom: 100px;
-    text-align: left;
-    color: white;
-    padding-left: 1rem;
+  padding-bottom: 100px;
+  text-align: left;
+  color: white;
+  padding-left: 1rem;
 }
 
 .p-porto h1 {
-    padding-bottom: 1rem;
-    font-size: 50px;
+  padding-bottom: 1rem;
+  font-size: 50px;
 }
 
 .p-porto p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .p-porto span {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* ABOUT */
 .about-porto p {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 div .about-tentang {
-    padding-top: 4rem;
+  padding-top: 4rem;
 }
 
-div .about-tentang, .about-pendidikan, .about-project, .about-keahlian, .about-alamat {
-    padding-left: 2rem;
-    padding-bottom: 4rem;
+div .about-tentang,
+.about-pendidikan,
+.about-project,
+.about-keahlian,
+.about-alamat {
+  padding-left: 2rem;
+  padding-bottom: 4rem;
 }
-
 
 /* CONTACT */
 .kontak-porto {
-    font-family: 'Poppins', sans-serif;
-    padding-top: 10px;
-    background-color: rgb(102, 102, 102);
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+  background-color: rgb(102, 102, 102);
 }
 
 .kontak-porto h2 {
-    text-align: center;
-    font-size: 25px;
-    padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
 }
 
 .igdin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
 }
 /* tablet */
-@media screen and (max-width:768px) {
-    nav {
-        width: 100%;
-    }
-    nav ul {
-        width: 50%;
-    }
-    nav .logo {
-        letter-spacing: 0;
-        font-family: 'Pacifico', cursive;
-    }
-    .img-porto img {
-        width: 60%;
-        height: 60%;
-        padding-right: 0;
-        padding-left: 2rem;
-    }
-    .p-porto {
-        padding-right: 2rem;
-    }
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    width: 50%;
+  }
+  nav .logo {
+    letter-spacing: 0;
+    font-family: "Pacifico", cursive;
+  }
+  .img-porto img {
+    width: 60%;
+    height: 60%;
+    padding-right: 0;
+    padding-left: 2rem;
+  }
+  .p-porto {
+    padding-right: 2rem;
+  }
 }
 
 /* phone */
-@media screen and (max-width:600px) {
-    .logo {
-        display: flex;
-    }
-    .menu-toggle {
-        display: flex;
-    }
-    .img-porto {
-        display: none;
-    }
-    nav .logo {
-        letter-spacing: 0;
-        font-family: 'Pacif ico', cursive;
-    }
-    nav ul {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 35%;
-        height: 100vh;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(54, 54, 54);
-        z-index: -1;
-        transform: translateX(100%);
-        transition: all 0.5s;
-        opacity: 0;
-    }
-    nav ul.slide {
-        opacity: 1;
-        transform: translateX(0);
-    }
+@media screen and (max-width: 600px) {
+  .logo {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .img-porto {
+    display: none;
+  }
+  nav .logo {
+    letter-spacing: 0;
+    font-family: "Pacif ico", cursive;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
