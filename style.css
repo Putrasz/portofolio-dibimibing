@@ -34,23 +34,25 @@ nav {
   position: fixed;
   display: flex;
   background-color: rgb(54, 54, 54);
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: 50px;
   align-items: center;
   color: rgb(232, 232, 232);
 }
 
+nav .logo {
+  letter-spacing: 2px;
+  font-family: "JetBrains Mono", cursive;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
 nav ul {
   display: flex;
   list-style: none;
-  width: 40%;
-  justify-content: space-between;
-}
-
-nav .logo {
-  letter-spacing: 3px;
-  font-family: "Pacifico", cursive;
+  padding-right: 2rem;
+  
 }
 
 nav ul li a {
@@ -58,10 +60,12 @@ nav ul li a {
   text-decoration: none;
   font-size: 0.9em;
   cursor: pointer;
+  margin: 2rem;
 }
 
 nav ul li a:hover {
   color: white;
+  font-weight: bold;
 }
 
 /* hamburger menu */
@@ -71,6 +75,7 @@ nav ul li a:hover {
   height: 20px;
   justify-content: space-between;
   position: relative;
+  padding-right: 10px;
 }
 
 .menu-toggle input {
@@ -192,13 +197,11 @@ div .about-tentang,
 @media screen and (max-width: 768px) {
   nav {
     width: 100%;
+    justify-content: space-between;
   }
-  nav ul {
-    width: 50%;
-  }
+
   nav .logo {
-    letter-spacing: 0;
-    font-family: "Pacifico", cursive;
+    letter-spacing: 1px;
   }
   .img-porto img {
     width: 60%;
@@ -224,7 +227,6 @@ div .about-tentang,
   }
   nav .logo {
     letter-spacing: 0;
-    font-family: "Pacif ico", cursive;
   }
   nav ul {
     position: absolute;
